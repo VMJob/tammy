@@ -72,3 +72,8 @@ source 'https://rails-assets.org' do
 end
 
 gem 'bootstrap', '4.0.0.alpha6'
+
+gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate-bootstrap' 
+
+gem 'simple_form'
