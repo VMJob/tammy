@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
-
+  before_action :authenticate_user!, only: [:new, :create]
   def index
-  	@places = Place.order(:id).paginate page: params[:page], per_page: 10
+  	@places = Place.order(:id).paginate :page => params[:page], per_page: 2
 
   end
 
@@ -21,4 +21,4 @@ class PlacesController < ApplicationController
   end
 
 
-end
+end 
