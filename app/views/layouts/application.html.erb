@@ -51,16 +51,17 @@
      <p class="alert alert-danger"><%= alert %></p>
    <% end %>
 
-   <%= yield %>
+  
 
    <div class="form-group string required place_name has-error">
-  <label class="control-label string required" for="place_name">
-    <abbr title="required">*</abbr>
-    " Name"
-  </label>
-  <input clas="form-control string required" aria-invalid="true" type="text" name="place[name]" id="place_name">
-  <span class="invalid-feedback">can't be blank</span>
-</div>
+    <label class="control-label string required" for="place_name">
+     <abbr title="required">*</abbr> " Name"
+   </label>
+   <input clas="form-control string required" aria-invalid="true" type="text" name="place[name]" id="place_name">
+   <span class="invalid-feedback">can't be blank</span>
+  </div>
 
+  <%= yield %>
+  
   </body>
 </html>
