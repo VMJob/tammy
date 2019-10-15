@@ -1,18 +1,10 @@
 <div class="booyah-box col-10 offset-1">
-  <h1>Enter Your Place Details</h1>
+  <h1>Edit Your Place Details</h1>
   <%= simple_form_for @place do |f| %>
-    <% if @place.errors.any? %>
-    <h2>Errors:</h2>
-    <ul>
-    	<% @place.errors.full message.each do |message| %>
-    	 <li><%= message %</li>
-
-    <% end %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :description %>
     <br />
     <%= f.submit 'Create', class: 'btn btn-primary' %>
   <% end %>
-
 </div>
