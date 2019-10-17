@@ -63,6 +63,10 @@ class PlacesController < ApplicationController
   def place_params
     params.require(:place).permit(:name, :description, :address)
   end
-
+  
+  def show
+  @place = Place.find(params[:id])
+  @photo = Photo.new
+end
 
 end 
