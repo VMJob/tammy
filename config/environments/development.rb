@@ -10,14 +10,14 @@ Rails.application.configure do
     #enable_starttls_auto: true,
     #user_name: ENV['GMAIL_ADDRESS'],
     #password: ENV['GMAIL_PASSWORD']
-  }
-  config.action_mailer.default_url_options = {host: 'https://tammy-vincent-job.herokuapp.com'}
-
+  
+  config.action_mailer.default_url_options = {host: 'tammy-vincent-job.herokuapp.com'}
+  
   # a bunch of other stuff .....
 
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # In the development environment your application's code is reloaded on
+  # In the development environment your applications code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
