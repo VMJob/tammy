@@ -50,9 +50,6 @@
 	</div>
   <% end %>
 
-  <% place.photos.each do |photo| %>
-    <div class="col-12">
-      <blockquote>
         <% if photo.picture.to_s.present? %>
         <%= image_tag photo.picture.to_s %>
         <% end %>
@@ -61,6 +58,7 @@
     </div>  
  </div>
 <% end %>
+<% end %> 
 
 <%= will_paginate @places %>
 
