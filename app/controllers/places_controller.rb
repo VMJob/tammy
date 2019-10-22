@@ -3,7 +3,8 @@ class PlacesController < ApplicationController
   def index
     #Place.delete(Place.where(name:'Chinese Restaurant').last.id)
   	@places = Place.order(:id).paginate :page => params[:page], per_page: 3
-
+    @photos = Photo.all
+    puts @places
   end
 
   def new
@@ -23,6 +24,7 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
     @comment = Comment.new
     @photo = Photo.new
+    puts @places
   end
   
   def edit

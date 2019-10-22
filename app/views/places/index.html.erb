@@ -38,7 +38,7 @@
     <% end %>
  
 
-<% if place.comments.present? %>
+  <% if place.comments.present? %>
 	<div class="col-12">
 	  <blockquote>
 	    <% if place.comments.last.humanized_rating.present? %>
@@ -49,15 +49,16 @@
 	  </blockquote>
 	</div>
   <% end %>
+   <% @photos.each do |photo| %>
+        <% if photo.place_id == place.id %>
+        	<% if photo.picture.to_s.present? %>
+        	<%= image_tag photo.picture.to_s %>
+       	    <% end %>
+            <small><%= photo.caption %></small>
+        <% end%>
+   <% end %>
+  </div>
 
-        <% if photo.picture.to_s.present? %>
-        <%= image_tag photo.picture.to_s %>
-        <% end %>
-        <small><%= photo.caption %></small>
-      </blockquote>
-    </div>  
- </div>
-<% end %>
 <% end %> 
 
 <%= will_paginate @places %>
