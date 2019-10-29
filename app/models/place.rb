@@ -1,6 +1,7 @@
 class Place < ApplicationRecord
   belongs_to :user
   has_many :comments
+  has_many :photo
   
   validates :address, presence: true
   validates :description, presence: true
@@ -9,7 +10,6 @@ class Place < ApplicationRecord
    geocoded_by :address
    after_validation :geocode
    
-   has_many :photo
   
 end
 
