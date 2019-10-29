@@ -24,7 +24,6 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
     @comment = Comment.new
     @photo = Photo.new
-    puts @places
   end
   
   def edit
