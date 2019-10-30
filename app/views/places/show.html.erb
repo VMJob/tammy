@@ -111,7 +111,7 @@
 <div class="row col-10 offset-1">
  <% @place.photos.each do |photo| %>
   <div class="col-12 col-sm-6">
-      <%= image_tag photo.picture.url, class: "img-fluid" %>
+      <%= image_tag photo.picture.url, class: "img-fluid show-img"  %>
       <small><%= photo.user.email %></small>
   </div>
  </div>
