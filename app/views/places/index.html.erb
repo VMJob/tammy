@@ -49,12 +49,14 @@
 	  </blockquote>
 	</div>
   <% end %>
+  <div class="col-12 col-sm-6">
    <% @photos.each do |photo| %>
         <% if photo.place_id == place.id %>
         	<% if photo.picture.to_s.present? %>
         	<%= image_tag photo.picture.to_s %>
        	    <% end %>
             <small><%= photo.caption %></small>
+           </div> 
         <% end%>
    <% end %>
  </div>  
