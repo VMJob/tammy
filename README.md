@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Yelp clone app that integrates with Google Map API which includes features like user comments, star ratins, image uploding, and user authentication. It was built with HTML, CSS, RUBY, RAILS, and ALGORITHYMS.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://tammy-vincent-job.herokuapp.com/
